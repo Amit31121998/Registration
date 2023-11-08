@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-COPY target/docker-app.war  usr/app/
+COPY target/docker-app.jar  usr/app/
 
 WORKDIR /usr/app
 
