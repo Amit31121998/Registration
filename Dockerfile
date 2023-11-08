@@ -1,9 +1,9 @@
 FROM openjdk:11
 
-COPY target/docker-app.jar  usr/app/
+COPY target/docker-app.war  usr/app/
 
 WORKDIR /usr/app
 
 EXPOSE 9090
 
-ENTRYPOINT [ "java","-jar","docker-app.jar" ]
+ENTRYPOINT [ "java","-war","docker-app.war" ]
