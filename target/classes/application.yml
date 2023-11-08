@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysqldb:3306/Anargya
+    url: jdbc:mysql://localhost:3306/Anargya
     username: root
     password: root
   jpa:
