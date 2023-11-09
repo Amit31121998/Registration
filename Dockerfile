@@ -1,9 +1,7 @@
 FROM openjdk:11
 
-COPY target/docker-app.jar  usr/app/
-
-WORKDIR /usr/app
-
 EXPOSE 9090
 
-ENTRYPOINT [ "java","-jar","docker-app.jar" ]
+ADD target/spring-boot-mysql.jar spring-boot-mysql.jar
+
+ENTRYPOINT ["java","-jar","/spring-boot-mysql.jar"]

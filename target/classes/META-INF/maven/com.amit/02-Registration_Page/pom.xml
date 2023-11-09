@@ -61,7 +61,7 @@
 
 	<build>
 		
-		<finalName>docker-app</finalName>
+		<finalName>spring-boot-mysql</finalName>
 		
 		<plugins>
 			<plugin>

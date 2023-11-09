@@ -1,7 +1,7 @@
 version: "3"
 services:
   application:
-    image: spring-boot-regi-app
+    image: spring-boot-mysql-app
     ports:
       - "9090:9090"
     networks:
@@ -12,12 +12,12 @@ services:
       - /data/springboot-app
     
   mysqldb:
-    image: mysql:5.7
+    image: mysql:8.0
     networks:
       - springboot-db-net
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=Anargya
+      - MYSQL_DATABASE=sbms
     volumes:
       - /data/mysql
 networks:
